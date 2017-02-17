@@ -1,0 +1,28 @@
+<!--<h1>{{ pokemon.formattedName() || 'Loading...' }}</h1>
+
+<div *ngIf="pokemon.name" class="details-container">
+  <img src="{{ pokemon.image() }}">
+
+  <h4>Types:</h4>
+  <ul>
+    <li *ngFor="let type of pokemon.types">
+      {{ type }}
+    </li>
+  </ul>
+
+  <h4>Stats:</h4>
+  <ul>
+    <li *ngFor="let stat of pokemon.stats">
+      {{ stat.name }}: {{ stat.value }}
+    </li>
+  </ul>
+</div>-->
+
+<ActionBar [title]="pokemon.formattedName() || 'Loading...'" class="action-bar"></ActionBar>
+
+<FlexboxLayout flexDirection="column" class="page">
+  <FlexboxLayout class="m-15">
+    <Label class="h2" [text]="pokemon.id"></Label>
+    <Label class="h2" [text]="pokemon.name"></Label>
+  </FlexboxLayout>
+</FlexboxLayout>
