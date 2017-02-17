@@ -1,7 +1,5 @@
-import { NgModule } from "@angular/core";
-import { HttpModule } from "@angular/http";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 
 import { AppComponent } from "./app.component";
@@ -12,9 +10,12 @@ import { PokemonDetailComponent } from "./pokemon/pokemon-detail.component";
 import { PokemonService } from "./pokemon/pokemon-service";
 
 @NgModule({
+  bootstrap: [
+    AppComponent
+  ],
   imports: [
     AppRoutingModule,
-    NativeScriptFormsModule,
+    NativeScriptModule,
     NativeScriptHttpModule
   ],
   declarations: [
@@ -25,6 +26,8 @@ import { PokemonService } from "./pokemon/pokemon-service";
   providers: [
     PokemonService
   ],
-  bootstrap: [AppComponent]
+  schemas: [
+    NO_ERRORS_SCHEMA
+  ]
 })
 export class AppModule { }

@@ -1,1 +1,25 @@
 @import 'nativescript-theme-core/css/core.light.css';
+
+.container {
+  align-items: center;
+}
+.container Label {
+  min-width: 200;
+}
+Image {
+  height: 96;
+  width: 96;
+}
+.details-container {
+  horizontal-align: left;
+  padding: 10;
+}
+.details-container .h2 {
+  margin-top: 10;
+}
+.bullet {
+  margin-left: 10;
+  border-width: 0 0 0 1;
+  padding-left: 5;
+  margin-bottom: 2;
+}

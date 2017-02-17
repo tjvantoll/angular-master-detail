@@ -5,9 +5,6 @@
   "repository": "<fill-your-repository-here>",
   "nativescript": {
     "id": "org.nativescript.pokemonnative",
-    "tns-ios": {
-      "version": "2.5.0"
-    },
     "tns-android": {
       "version": "2.5.0"
     }

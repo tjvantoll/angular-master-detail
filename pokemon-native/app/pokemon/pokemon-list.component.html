@@ -1,19 +1,15 @@
-<ActionBar title="Pokémon 2"></ActionBar>
+<ActionBar title="Pokémon"></ActionBar>
 
-<Label text="hi"></Label>
-
-<!--<StackLayout class="page">
+<StackLayout class="page">
   <Label [style.visibility]="pokemon ? 'collapse' : 'visible'"
-    class="h1" text="Loading..."></Label>
+    class="h1 m-10" text="Loading..."></Label>
 
   <ListView [items]="pokemon" class="list-group">
     <template let-item="item">
-      <FlexboxLayout>
+      <FlexboxLayout [nsRouterLink]="['/details', item.id]" class="container">
         <Image [src]="item.image()"></Image>
-        <Label [nsRouterLink]="['/item', item.id]"
-          text="foo" class="list-group-item"></Label>
+        <Label [text]="item.formattedName()" class="list-group-item"></Label>
       </FlexboxLayout>
     </template>
   </ListView>
-</StackLayout>-->
-
+</StackLayout>
