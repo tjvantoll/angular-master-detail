@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  padding-left: 2rem;
+}
+.list-view {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+.list-view li {
+  border-bottom: 1px solid #222;
+}
+.list-view a {
+  display: flex;
+  padding: 0.25rem 2rem;
+  color: #222;
+  text-decoration: none;
+}
+.list-view img {
+  height: 96px;
+  width: 96px;
+}
+.list-view span {
+  align-self: center;
+  display: inline-block;
+  padding-left: 1rem;
+}
+
+.details-container {
+  margin-left: 2rem;
+}

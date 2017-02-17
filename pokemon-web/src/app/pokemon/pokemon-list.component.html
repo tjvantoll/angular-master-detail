@@ -1,0 +1,10 @@
+<h1 *ngIf="!pokemon">Loading...</h1>
+
+<ul class="list-view">
+  <li *ngFor="let item of pokemon">
+    <a [routerLink]="['/details', item.id]">
+      <img src="{{ item.image() }}">
+      <span>{{ item.formattedName() }}</span>
+    </a>
+  </li>
+</ul>
