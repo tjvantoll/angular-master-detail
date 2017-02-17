@@ -2,9 +2,9 @@
 
 This repo contains two examples of how to build master-detail user interfaces with Angular—one for the web, and one for native mobile using [NativeScript](https://www.nativescript.org/showcases). Both apps are simple Pokémon viewing apps driven by the [free-to-use pokéapi](http://pokeapi.co/).
 
-![](https://github.com/tjvantoll/articles/blob/master/master-detail/pokemon-master-detail.png?raw=true)
+<img src="https://github.com/tjvantoll/articles/blob/master/master-detail/pokemon-master-detail.png?raw=true" style="height: 500px;">
 
-### Web
+## Web
 
 To run the web app, first clone this repo, and then `cd` into the `pokemon-web` folder.
 
@@ -26,7 +26,7 @@ ng serve
 
 If all went well you should be able to visit `localhost:4200` in your browser to see your app running.
 
-### Native
+## Native
 
 To run the native app you need to have NativeScript and its dependencies installed on your development machine. Check out [NativeScript’s installation documentation](http://docs.nativescript.org/start/quick-setup) for details on how to do that.
 
