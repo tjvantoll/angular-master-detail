@@ -5,7 +5,7 @@ import { Pokemon } from "./pokemon.model";
 import { PokemonService } from "./pokemon-service";
 
 @Component({
-  selector: "pk-details",
+  selector: "app-details",
   moduleId: module.id,
   templateUrl: "./pokemon-detail.component.html",
 })
@@ -15,7 +15,7 @@ export class PokemonDetailComponent implements OnInit {
   constructor(private pokemonService: PokemonService, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    const id = this.route.snapshot.params["id"];
+    const id = +this.route.snapshot.params["id"];
 
     this.pokemonService.get(id)
       .then((pokemon) => { this.pokemon = pokemon; });

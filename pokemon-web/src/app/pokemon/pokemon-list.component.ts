@@ -4,7 +4,7 @@ import { Pokemon } from "./pokemon.model";
 import { PokemonService } from "./pokemon-service";
 
 @Component({
-  selector: "pk-items",
+  selector: "all-list",
   moduleId: module.id,
   templateUrl: "./pokemon-list.component.html",
 })

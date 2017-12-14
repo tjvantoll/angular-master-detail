@@ -31,11 +31,10 @@ export class PokemonService {
     })
     .catch(this.handleError);
   }
-
   get(id: number) {
     let headers = new Headers();
     headers.append("Content-Type", "application/json");
-
+  
     return this.http.get("https://pokeapi.co/api/v2/pokemon/" + id + "/", {
       headers: headers
     })
@@ -45,11 +44,11 @@ export class PokemonService {
       let pokemon = new Pokemon();
       pokemon.name = data.name;
       pokemon.id = data.id;
-
+  
       data.types.forEach((eachType) => {
         pokemon.types.push(eachType.type.name);
       });
-
+  
       data.stats.forEach((eachStat) => {
         pokemon.stats.push({
           name: eachStat.stat.name,
@@ -61,6 +60,8 @@ export class PokemonService {
     })
     .catch(this.handleError);
   }
+  
+  
 
   private handleError (error: Response | any) {
     let errMsg: string;
